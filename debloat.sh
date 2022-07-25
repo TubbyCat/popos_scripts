@@ -52,16 +52,20 @@ else
 
   # Language pack removal
 
-  echo 'Langpacks being deleted.. be patient. Script will exit on its own.'
-
   #Elaborated code, in case you want to keep certain languages.
 
   $RM hunspell-a* hunspell-d* hunspell-es* hunspell-i* hunspell-p* hunibus-table-quick-classicspell-ar hunspell-p* hunspell-ru hunspell-en-za hunspell-fr* 
+  
   $RM gnome-user-docs-de* gnome-user-docs-es* gnome-user-docs-fr* gnome-user-docs-it* gnome-user-docs-ja* gnome-user-docs-pt* gnome-user-docs-ru* gnome-user-docs-zh-hans* 
+  
   $RM language-pack-gnome-a* language-pack-gnome-es* language-pack-gnome-d* language-pack-gnome-fr* language-pack-gnome-i* language-pack-gnome-j* language-pack-gnome-ru* language-pack-gnome-z* language-pack-i* language-pack-j* language-pack-p* language-pack-r* language-pack-zh-han* language-pack-gnome-ar* language-pack-ar* language-pack-fr* language-pack-de* language-pack-es*
+  
   $RM mythes-ar* mythes-de* mythes-de-ch* mythes-en-au* mythes-es* mythes-fr* mythes-it* mythes-pt* mythes-ru* hyphen-de hyphen-es hyphen-fr hyphen-it hyphen-p* hyphen-ru* 
-  $RM wspanish wbrazilian* wfrench* witalian* wngerman* wogerman* wportuguese* wswiss* wswedish wdanish wdutch wukranian 
-  $RM pocketsphinx* wgerman* wbulgarian wnorwegian 
+  
+  $RM wspanish wbrazilian* wfrench* witalian* wngerman*  wgerman* wogerman* wbulgarian wnorwegian  wportuguese* wswiss* wswedish wdanish wdutch wukranian 
+  
+  $RM pocketsphinx*
+  
   #Asian typing removal
   $RM *pinyin* ibus-chewing ibus-table-cangjie* ibus-table-wubi 
 
