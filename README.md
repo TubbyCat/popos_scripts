@@ -1,6 +1,6 @@
 # popos_scripts
 
-** this is in no way comprehensive **
+**this is in no way comprehensive**
 
 Pop!_OS scripts aimed at improved security and/or usability of the aforementioned operating system.
 
