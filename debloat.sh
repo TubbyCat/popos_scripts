@@ -47,11 +47,11 @@ else
   #$RM cups-browsed cups-pk-helper sane-airscan sane-utils 
   #$RM ntfs-3g 
   
-  #If you do not want ENGLISH language packs, uncomment following AND DO COMMENT OUT OR REMOVE NEEDED LANGS BELOW!!!:
-  # $RM mythes-en* language-pack-gnome-en* language-pack-en* hunspell-en* hyphen-en* wamerican wbritish wcanadian* 
+  ##If you do not want ENGLISH language packs, uncomment following AND DO COMMENT OUT OR REMOVE NEEDED LANGS BELOW!!!:
+  # $RM mythes-en* language-pack-gnome-en* language-pack-en* hunspell-en* hyphen-en* wamerican wbritish wcanadian*
+  # $RM libreoffice-l10n-en*
 
-  # Language pack removal
-
+  ## Language pack removal
   #Elaborated code, in case you want to keep certain languages.
 
   $RM hunspell-a* hunspell-d* hunspell-es* hunspell-i* hunspell-p* hunibus-table-quick-classicspell-ar hunspell-p* hunspell-ru hunspell-en-za hunspell-fr* 
@@ -71,7 +71,7 @@ else
 
   #Further Language Pack related bloatware
   $RM krb5-locales 
-  $RM libreoffice-help* 
+  $RM libreoffice-help* libreoffice-l10n-[^en*]
   $RM qttranslations5-l10n 
   exit 0
 fi
