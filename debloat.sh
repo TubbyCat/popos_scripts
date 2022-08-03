@@ -6,7 +6,8 @@
 #THE AUTHOR MAY MODIFY THIS SCRIPT WITHOUT PRIOR WARNING
 
 #Working assumption is that user is a grown-up who can manually install their own packages as needed. Prior to such action, said big-boy user would prefer a harddrive which is not as cluttered by useless packages. 
-#It is a wortwhile act, in principle, to remove unnecessary packages from a system so as to limit the number of packages for which there could exist undisclosed vulnerabilities. 
+#It is a wortwhile act, in principle, to remove unnecessary packages from a system so as to limit the number of packages for which there could exist undisclosed vulnerabilities.
+#If you later find a desired package is missing, install it manually.
 
 #Removes language packs != english
 
@@ -42,10 +43,10 @@ else
 
   #OPTIONAL / DISCRETIONARY. Hint: RUN apt info $packagename for what it does.
 
-  # $RM totem* geary pop-shop ibus-table-quick-classic ibverbs-providers
+  $RM totem* geary pop-shop ibus-table-quick-classic ibverbs-providers
   $RM gnome-accessibility-themes gnome-font-viewer gnome-weather 
-  #$RM cups-browsed cups-pk-helper sane-airscan sane-utils 
-  #$RM ntfs-3g 
+  $RM cups-browsed cups-pk-helper sane-airscan sane-utils #Removes print server AND scanning
+  #$RM ntfs-3g #Might break stuff. Needed for loading NTFS filetype (Windows)
   
   ##If you do not want ENGLISH language packs, uncomment following AND DO COMMENT OUT OR REMOVE NEEDED LANGS BELOW!!!:
   # $RM mythes-en* language-pack-gnome-en* language-pack-en* hunspell-en* hyphen-en* wamerican wbritish wcanadian*
