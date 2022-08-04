@@ -42,16 +42,15 @@ else
   $RM *telnet* apport bpfcc-tools avahi-utils baobab blt bolt docbook-xml *eddy ftp gnome-remote* dleyna-server  friendly-recovery gkbd-capplet icu-devtools modemmanager mtr-tiny mobile-broadband* rtmpdump ruby* rygel *upnp* yelp popsicle* javascript-common whoopsie tcpdump
 
   #OPTIONAL / DISCRETIONARY. Hint: RUN apt info $packagename for what it does.
-
-  $RM totem* geary pop-shop ibus-table-quick-classic ibverbs-providers
-  $RM gnome-accessibility-themes gnome-font-viewer gnome-weather 
+  $RM totem* geary pop-shop gnome-font-viewer gnome-weather ibus-table-quick-classic ibverbs-providers
+  $RM gnome-accessibility-themes xbrlapi brltty #accessibility packages 
   $RM cups-browsed cups-pk-helper sane-airscan sane-utils #Removes print server AND scanning
   #$RM ntfs-3g #Might break stuff. Needed for loading NTFS filetype (Windows)
   
-  ##If you do not want ENGLISH language packs, uncomment following AND DO COMMENT OUT OR REMOVE NEEDED LANGS BELOW!!!:
-  # $RM mythes-en* language-pack-gnome-en* language-pack-en* hunspell-en* hyphen-en* wamerican wbritish wcanadian*
-  # $RM libreoffice-l10n-en*
-
+  ## If you do not want ENGLISH language packs, uncomment following AND DO COMMENT OUT OR REMOVE NEEDED LANGS BELOW!!!:
+  
+  # $RM mythes-en* language-pack-gnome-en* language-pack-en* hunspell-en* hyphen-en* wamerican wbritish wcanadian* libreoffice-l10n-en*
+  
   ## Language pack removal
   #Elaborated code, in case you want to keep certain languages.
 
@@ -64,7 +63,7 @@ else
   $RM mythes-ar* mythes-de* mythes-de-ch* mythes-en-au* mythes-es* mythes-fr* mythes-it* mythes-pt* mythes-ru* hyphen-de hyphen-es hyphen-fr hyphen-it hyphen-p* hyphen-ru* 
   
   $RM wspanish wbrazilian* wfrench* witalian* wngerman*  wgerman* wogerman* wbulgarian wnorwegian  wportuguese* wswiss* wswedish wdanish wdutch wukranian 
-  
+ 
   $RM pocketsphinx*
   
   #Asian typing removal
