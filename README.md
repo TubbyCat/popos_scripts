@@ -8,3 +8,5 @@ Please provide relevant credit/citations if directly copying and/or referencing 
 Feel free to provide feedback.
 
 Will accept chin scritchies as a token of gratitude.
+
+# Note: Project paused as pop-os ran into issues, will continue later. 
